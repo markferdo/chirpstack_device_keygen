@@ -15,7 +15,7 @@ DEVICE_PROFILE_ID="profile_id"
 ```
 
 ## Getting key variables
-Go to the network address of the Raspberry Pi running the chirpstack lorawan gateway. (If the gatway isn't connected to a network, you can connect to it's Access point. SSID: ```ChirpStackAP-XXXXXX```, PW: ```ChirpStackAP```. Then go to: ```http://192.168.0.1:8080```, username and password should both be ```admin```).
+Go to the network address of the Raspberry Pi running the chirpstack lorawan gateway. (If the gateway isn't connected to a network, you can connect to it's Access point. SSID: ```ChirpStackAP-XXXXXX```, PW: ```ChirpStackAP```. Then go to: ```http://192.168.0.1:8080```, username and password should both be ```admin```).
 
 ### GATEWAY_ADDRESS
 The network address of the gateway. e.g. ```192.168.0.1:8080``` or ```example.com```
@@ -79,7 +79,7 @@ docker compose up -d
 ```
 
 ## Generating the access keys
-- Make sure that your computer and the gateway are on the same network.
+- Make sure that the gateway address is reachable
 
 Go to: ```http://localhost:3000```
 
