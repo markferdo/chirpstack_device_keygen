@@ -119,29 +119,6 @@ app.get("/api/latest-device", (req, res) => {
     }
 });
 
-// example python code to get the keys from the given route. 
-/*
-import requests
-import serial
-import json
-
-data = requests.get("http://localhost:3000/api/latest-device").json() // json format data (deveui, joineui and appkey)
-
-app = serial.Serial('/dev/ttyUSB0', 9600) 
-app.write(json.dumps(data).encode())
-app.close()
-
-*/
-
-// NVS c++
-// esp side needs to use uart to get the data
-
-/*
-
-
-
-*/
-
 app.listen(3000, () => {
     console.log("Listening on port: 3000")
 })
